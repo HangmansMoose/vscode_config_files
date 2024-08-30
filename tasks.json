@@ -1,0 +1,14 @@
+{
+    "version":"2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type":"process",
+            "command": ".\\handmade\\code\\build.bat",
+            "group": {
+                "kind":"build",
+                "isDefault": true
+            }
+        }
+    ]
+}
