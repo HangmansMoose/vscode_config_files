@@ -4,8 +4,7 @@
     // codelldb
     // glsl canvas
     // gruvbox themes (tom Philbin)
-    // kangawa flavors
-    // Monokai pro
+    // Kanagawa Flavors (metapho.re)
     // Pylance
     // python
     // python debugger
@@ -13,27 +12,31 @@
     // TODO Highlight
     // XML Tools
     // WSL
+    // Vim
+    "zenMode.centerLayout": false, 
+    "zenMode.hideLineNumbers": false, 
     "security.workspace.trust.untrustedFiles": "open",
     "editor.fontFamily": "CaskaydiaCove Nerd Font Mono",
     "git.openRepositoryInParentFolders": "never",
     "debug.focusWindowOnBreak": false,
-    "workbench.colorTheme": "Kanagawa Dragon",
+    "workbench.colorTheme": "Kanagawa Wave",
     "xmlTools.enforcePrettySelfClosingTagOnFormat": true,
     "editor.minimap.enabled": false,
     //"terminal.integrated.shell.windows": "c:/Program Files/PowerShell/7/pwsh.exe",
     "terminal.integrated.scrollback": 10000,
     "terminal.integrated.rightClickBehavior": "paste",
     //"terminal.integrated.fontWeight": "1",
-    "editor.fontSize": 14,
+    "editor.fontSize": 15,
     "editor.fontWeight": "1",
     "editor.stickyScroll.enabled": false,
     "workbench.editor.showTabs": "multiple",
     "workbench.colorCustomizations": {
         "editorCursor.foreground": "#00ff33",
-        "editor.lineHighlightBackground": "#252525",
+        "editor.lineHighlightBackground": "#111144",
+        "editorLineNumber.foreground": "#727169",
         "statusBar.background": "#121212",
-        "editor.background": "#191919",
-        "editorGutter.background": "#181818",
+        "editor.background": "#121212",
+        "editorGutter.background": "#121212",
         "statusBar.foreground":"#b2b4b7", 
         "statusBar.noFolderBackground" : "#212121",
         "statusBar.debuggingBackground": "#263238",
@@ -43,10 +46,12 @@
         "breadcrumb.background": "#181818",
         "breadcrumb.foreground": "#b4a489",
         "sideBar.background": "#121212",
+        "sideBarSectionHeader.background": "#121212",
         "titleBar.activeBackground": "#121212",
         "titleBar.inactiveBackground": "#121212",
         "tab.activeBackground": "#121212",
         "tab.inactiveBackground": "#121212",
+        "tab.inactiveForeground": "#727169",
         "editorGroupHeader.tabsBackground": "#121212"        
     },
     
@@ -206,6 +211,7 @@
             "variable.other.readwrite",
             "variable.parameter"
         ],
+        // This setting removes italics, underlines, bolding, etc...
         "settings": {
           "fontStyle": ""
         }
@@ -231,5 +237,9 @@
       "editor.lightbulb.enabled": "off",
       "makefile.configureOnOpen": true,
       "editor.renderWhitespace": "none",
-     
+      "scm.diffDecorations": "none",
+      "scm.diffDecorationsGutterAction": "none",
+      "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+      },
 }
