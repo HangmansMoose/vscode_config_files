@@ -16,43 +16,42 @@
     "zenMode.centerLayout": false, 
     "zenMode.hideLineNumbers": false, 
     "security.workspace.trust.untrustedFiles": "open",
-    "editor.fontFamily": "CaskaydiaCove Nerd Font Mono",
+    "editor.fontFamily": "CaskaydiaMono Nerd Font",
+    "editor.fontWeight": "normal",
+    //"editor.fontLigatures": "'calt', 'liga', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07'",
     "git.openRepositoryInParentFolders": "never",
     "debug.focusWindowOnBreak": false,
-    "workbench.colorTheme": "Kanagawa Wave",
     "xmlTools.enforcePrettySelfClosingTagOnFormat": true,
     "editor.minimap.enabled": false,
     //"terminal.integrated.shell.windows": "c:/Program Files/PowerShell/7/pwsh.exe",
     "terminal.integrated.scrollback": 10000,
     "terminal.integrated.rightClickBehavior": "paste",
-    //"terminal.integrated.fontWeight": "1",
-    "editor.fontSize": 15,
-    "editor.fontWeight": "1",
     "editor.stickyScroll.enabled": false,
     "workbench.editor.showTabs": "multiple",
     "workbench.colorCustomizations": {
-        "editorCursor.foreground": "#00ff33",
-        "editor.lineHighlightBackground": "#111144",
-        "editorLineNumber.foreground": "#727169",
-        "statusBar.background": "#121212",
-        "editor.background": "#121212",
-        "editorGutter.background": "#121212",
-        "statusBar.foreground":"#b2b4b7", 
-        "statusBar.noFolderBackground" : "#212121",
-        "statusBar.debuggingBackground": "#263238",
-        "statusBarItem.remoteBackground": "#121212",
-        "activityBar.background": "#121212",
-        "list.focusBackground": "#121212",
-        "breadcrumb.background": "#181818",
-        "breadcrumb.foreground": "#b4a489",
-        "sideBar.background": "#121212",
-        "sideBarSectionHeader.background": "#121212",
-        "titleBar.activeBackground": "#121212",
-        "titleBar.inactiveBackground": "#121212",
-        "tab.activeBackground": "#121212",
-        "tab.inactiveBackground": "#121212",
-        "tab.inactiveForeground": "#727169",
-        "editorGroupHeader.tabsBackground": "#121212"        
+      "editorCursor.foreground": "#00ff33",
+      "editorCursor.background": "#303030",
+      "editor.lineHighlightBackground": "#111155",
+      "editorLineNumber.foreground": "#727169",
+      "statusBar.background": "#141414",
+      "editor.background": "#141414",
+      "editorGutter.background": "#141414",
+    //  "statusBar.foreground":"#b4a489", 
+      "statusBar.noFolderBackground" : "#141414",
+      "statusBar.debuggingBackground": "#263238",
+      "statusBarItem.remoteBackground": "#141414",
+      "activityBar.background": "#141414",
+    //  "activityBar.foreground": "#b4a489",
+     // "activityBar.inactiveForeground": "#b4a489",
+      "list.focusBackground": "#141414",
+      "breadcrumb.background": "#141414",
+    //  "breadcrumb.foreground": "#b4a489",
+      "sideBar.background": "#141414",
+      "sideBarSectionHeader.background": "#141414",
+      "titleBar.activeBackground": "#141414",
+      "titleBar.inactiveBackground": "#141414",
+      "tab.activeBackground": "#141414",
+      "tab.inactiveBackground": "#141414",
     },
     
     "workbench.statusBar.visible": true,
@@ -66,7 +65,6 @@
     "C_Cpp.vcFormat.indent.namespaceContents": true,
     "C_Cpp.workspaceSymbols": "All",
     "editor.cursorStyle": "line",
-    "window.zoomLevel": 0.25,
     "editor.tabCompletion": "on",
     "todohighlight.isEnable": true,
     "todohighlight.keywords": [
@@ -211,23 +209,30 @@
             "variable.other.readwrite",
             "variable.parameter"
         ],
-        // This setting removes italics, underlines, bolding, etc...
         "settings": {
           "fontStyle": ""
         }
       }
     ]
   },
-      "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
-      
+      "terminal.integrated.fontFamily": "MartianMono Nerd Font",
+      "terminal.integrated.fontSize": 15,      
       "terminal.integrated.shellIntegration.enabled": false,
       "terminal.integrated.profiles.windows": {
         "PowerShell": {
           "path": "C:/Program Files/Powershell/7/pwsh.exe",
           "args": [
-            "-noexit",
-            "-File",
-            "C:/tools/vcvars_powershell.ps1"
+            //"-noexit",
+            //"-File",
+            //"C:/tools/vcvars_powershell.ps1"
+          ]
+        },
+        "cmdDev": {
+          "path": "cmd.exe",
+          "args": [
+            "/k",
+            "C:\\Program^ Files\\Microsoft^ Visual^ Studio\\2022\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat", 
+            "x64"
           ]
         },
       },
@@ -242,4 +247,13 @@
       "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
       },
+      "editor.fontSize": 16,
+      "redhat.telemetry.enabled": false,
+      "chat.commandCenter.enabled": false,
+      "editor.bracketPairColorization.enabled": false,
+      "workbench.iconTheme": "vscode-icons",
+      "workbench.colorTheme": "Jellybeans.vim",
+      "vsicons.dontShowNewVersionMessage": true,
+      "zig.zls.enabled": "on",
 }
+  
