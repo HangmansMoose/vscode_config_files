@@ -13,94 +13,26 @@
     // XML Tools
     // WSL
     // Vim
-    "zenMode.centerLayout": false, 
-    "zenMode.hideLineNumbers": false, 
-    "security.workspace.trust.untrustedFiles": "open",
+    
+    /*          Editor Options          */
     "editor.fontFamily": "CaskaydiaMono Nerd Font",
     "editor.fontWeight": "normal",
-    //"editor.fontLigatures": "'calt', 'liga', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07'",
-    "git.openRepositoryInParentFolders": "never",
-    "debug.focusWindowOnBreak": false,
-    "xmlTools.enforcePrettySelfClosingTagOnFormat": true,
-    "editor.minimap.enabled": false,
-    //"terminal.integrated.shell.windows": "c:/Program Files/PowerShell/7/pwsh.exe",
-    "terminal.integrated.scrollback": 10000,
-    "terminal.integrated.rightClickBehavior": "paste",
+    "editor.fontSize": 18,
     "editor.stickyScroll.enabled": false,
-    "workbench.editor.showTabs": "multiple",
-    "workbench.colorCustomizations": {
-      "editorCursor.foreground": "#00ff33",
-      "editorCursor.background": "#303030",
-      "editor.lineHighlightBackground": "#111155",
-      "editorLineNumber.foreground": "#727169",
-      "statusBar.background": "#141414",
-      "editor.background": "#141414",
-      "editorGutter.background": "#141414",
-    //  "statusBar.foreground":"#b4a489", 
-      "statusBar.noFolderBackground" : "#141414",
-      "statusBar.debuggingBackground": "#263238",
-      "statusBarItem.remoteBackground": "#141414",
-      "activityBar.background": "#141414",
-    //  "activityBar.foreground": "#b4a489",
-     // "activityBar.inactiveForeground": "#b4a489",
-      "list.focusBackground": "#141414",
-      "breadcrumb.background": "#141414",
-    //  "breadcrumb.foreground": "#b4a489",
-      "sideBar.background": "#141414",
-      "sideBarSectionHeader.background": "#141414",
-      "titleBar.activeBackground": "#141414",
-      "titleBar.inactiveBackground": "#141414",
-      "tab.activeBackground": "#141414",
-      "tab.inactiveBackground": "#141414",
-    },
-    
-    "workbench.statusBar.visible": true,
+    "editor.inlayHints.enabled": "off",
+    "editor.links": false,
     "editor.lineNumbers": "relative",
-    "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 4, ColumnLimit: 0, NamespaceIndentation: All, BreakBeforeBraces: Attach, PointerAlignment: Left, IndentPPDirectives: AfterHash}",
-    "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
-    "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
-    "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
-    "C_Cpp.vcFormat.space.pointerReferenceAlignment": "left",
-    "C_Cpp.clang_format_sortIncludes": false,
-    "C_Cpp.vcFormat.indent.namespaceContents": true,
-    "C_Cpp.workspaceSymbols": "All",
     "editor.cursorStyle": "line",
     "editor.tabCompletion": "on",
-    "todohighlight.isEnable": true,
-    "todohighlight.keywords": [
-      {
-        "text": "TODO:",
-        "color": "red",
-        "backgroundColor": "rgba(0,0,0,0)",
-        "overviewRulerColor": "rgba(0,0,0,0)"
-      },
-      {
-        "text": "TODO(Glen):",
-        "color": "red",
-        "backgroundColor": "rgba(0,0,0,0)",
-        "overviewRulerColor": "rgba(0,0,0,0)"
-      },
-      {
-        "text": "HACK:",
-        "color": "#ff6600",
-        "backgroundColor": "rgba(0,0,0,0)",
-        "overviewRulerColor": "rgba(0,0,0,0)"
-      },
-      {
-        "text": "NOTE:",
-        "color": "green",
-        "backgroundColor": "rgba(0,0,0,0)",
-        "overviewRulerColor": "rgba(0,0,0,0)"
-      }
-    ],
-
-    "todohighlight.defaultStyle": {
-        "color": "red",
-        //"backgroundColor": "#ffab00",
-        "overviewRulerColor": "rgba(0,0,0,0)",
-        "isWholeLine": false,
-    },
-    "editor.tokenColorCustomizations": {   
+    "editor.indentSize": "tabSize",
+    "editor.renderWhitespace": "none",
+    "editor.lightbulb.enabled": "off",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.minimap.enabled": false,
+    //"editor.fontLigatures": "'calt', 'liga', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07'",
+    "editor.tokenColorCustomizations": {
+      // NOTE: This is essentially a hack to get rid of underlining, italics, and bolding for all
+      // themes and languages   
       "textMateRules": [
         {
           "scope": [
@@ -183,6 +115,7 @@
             "storage",
             "storage.modifier",
             "storage.type",
+            "storage.type.modifier",
             "string",
             "string.interpolated",
             "string.other",
@@ -215,45 +148,130 @@
       }
     ]
   },
-      "terminal.integrated.fontFamily": "MartianMono Nerd Font",
-      "terminal.integrated.fontSize": 15,      
-      "terminal.integrated.shellIntegration.enabled": false,
-      "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-          "path": "C:/Program Files/Powershell/7/pwsh.exe",
-          "args": [
-            //"-noexit",
-            //"-File",
-            //"C:/tools/vcvars_powershell.ps1"
-          ]
-        },
-        "cmdDev": {
-          "path": "cmd.exe",
-          "args": [
-            "/k",
-            "C:\\Program^ Files\\Microsoft^ Visual^ Studio\\2022\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat", 
-            "x64"
-          ]
-        },
+
+    
+    /*          Terminal Options          */
+    //"terminal.integrated.shell.windows": "c:/Program Files/PowerShell/7/pwsh.exe",
+    "terminal.integrated.scrollback": 10000,
+    "terminal.integrated.rightClickBehavior": "paste",
+    "terminal.integrated.fontFamily": "GeistMono Nerd Font",
+    "terminal.integrated.fontSize": 16,      
+    "terminal.integrated.shellIntegration.enabled": false,
+    "terminal.integrated.profiles.windows": {
+      "PowerShell": {
+        "path": "C:/Program Files/Powershell/7/pwsh.exe",
+        "args": [
+          //"-File",
+          //"C:/tools/vcvars_powershell.ps1"
+        ]
       },
-      "terminal.integrated.defaultProfile.windows": "PowerShell",
-      "editor.indentSize": "tabSize",
-      "powershell.promptToUpdatePowerShell": false,
-      "editor.lightbulb.enabled": "off",
-      "makefile.configureOnOpen": true,
-      "editor.renderWhitespace": "none",
-      "scm.diffDecorations": "none",
-      "scm.diffDecorationsGutterAction": "none",
-      "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
+      "cmdDev": {
+        "path": "cmd.exe",
+        "args": [
+          "/k",
+          "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat", 
+          "x64"
+        ]
       },
-      "editor.fontSize": 16,
-      "redhat.telemetry.enabled": false,
-      "chat.commandCenter.enabled": false,
-      "editor.bracketPairColorization.enabled": false,
-      "workbench.iconTheme": "vscode-icons",
-      "workbench.colorTheme": "Jellybeans.vim",
-      "vsicons.dontShowNewVersionMessage": true,
-      "zig.zls.enabled": "on",
-}
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "powershell.promptToUpdatePowerShell": false,
+
+    /*          Workbench Options          */
+    "workbench.colorTheme": "Gruvbox Dark (Hard)",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.editor.showTabs": "multiple",
+    "workbench.colorCustomizations": {
+      "editorCursor.foreground": "#00ff33",
+      "editorCursor.background": "#303030",
+      "editor.lineHighlightBackground": "#111155",
+    //  "editorLineNumber.foreground": "#727169",
+      "statusBar.background": "#212121",
+      "editor.background": "#212121",
+      "editorGutter.background": "#212121",
+    //  "statusBar.foreground":"#b4a489", 
+    //  "statusBar.noFolderBackground" : "#151515",
+    //  "statusBar.debuggingBackground": "#263238",
+    //  "statusBarItem.remoteBackground": "#151515",
+      "activityBar.background": "#212121",
+    ////  "activityBar.foreground": "#b4a489",
+    // // "activityBar.inactiveForeground": "#b4a489",
+    //  "list.focusBackground": "#151515",
+    //  "breadcrumb.background": "#151515",
+    //  "breadcrumb.foreground": "#b4a489",
+    //  "sideBar.background": "#151515",
+    //  "sideBarSectionHeader.background": "#151515",
+      "titleBar.activeBackground": "#202020",
+    //  "titleBar.inactiveBackground": "#151515",
+    //  "tab.activeBackground": "#151515",
+    //  "tab.inactiveBackground": "#151515",
+    },
+
+    /*          Language Options          */
+    "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 4, ColumnLimit: 0, NamespaceIndentation: All, BreakBeforeBraces: Attach, PointerAlignment: Left, IndentPPDirectives: AfterHash}",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+    "C_Cpp.vcFormat.space.pointerReferenceAlignment": "left",
+    "C_Cpp.clang_format_sortIncludes": false,
+    "C_Cpp.vcFormat.indent.namespaceContents": true,
+    "C_Cpp.workspaceSymbols": "All",
+    "C_Cpp.copilotHover": "disabled",
+  "xmlTools.enforcePrettySelfClosingTagOnFormat": true,
+  "zig.zls.enabled": "on",
+
+    /*          TODO Options          */
+    "todohighlight.isEnable": true,
+    "todohighlight.keywords": [
+      {
+        "text": "TODO:",
+        "color": "red",
+        "backgroundColor": "rgba(0,0,0,0)",
+        "overviewRulerColor": "rgba(0,0,0,0)"
+      },
+      {
+        "text": "TODO(Glen):",
+        "color": "red",
+        "backgroundColor": "rgba(0,0,0,0)",
+        "overviewRulerColor": "rgba(0,0,0,0)"
+      },
+      {
+        "text": "HACK:",
+        "color": "#ff6600",
+        "backgroundColor": "rgba(0,0,0,0)",
+        "overviewRulerColor": "rgba(0,0,0,0)"
+      },
+      {
+        "text": "NOTE:",
+        "color": "green",
+        "backgroundColor": "rgba(0,0,0,0)",
+        "overviewRulerColor": "rgba(0,0,0,0)"
+      }
+    ],
+
+    "todohighlight.defaultStyle": {
+        "color": "red",
+        //"backgroundColor": "#ffab00",
+        "overviewRulerColor": "rgba(0,0,0,0)",
+        "isWholeLine": false,
+    },
   
+  
+  /*          Assorted Settings          */
+
+  "scm.diffDecorations": "none",
+  "scm.diffDecorationsGutterAction": "none",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "redhat.telemetry.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "chat.extensionTools.enabled": false,
+  "chat.focusWindowOnConfirmation": false,
+  "zenMode.centerLayout": false, 
+  "zenMode.hideLineNumbers": false, 
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.openRepositoryInParentFolders": "never",
+  "debug.focusWindowOnBreak": false,
+}
