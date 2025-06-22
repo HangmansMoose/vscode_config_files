@@ -23,7 +23,7 @@
 	        "problemMatcher": "$msCompile", // matches output to MSBuild so that errors/warnings are mapped to correct files in the problems tab
 	        
         }
-       1{
+        {
 	        "label": "MSBuild: x64 Release",
 	        "type": "shell",
 	        "command": "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/current/Bin/MSBuild.exe",
