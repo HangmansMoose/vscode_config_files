@@ -167,7 +167,11 @@
           "fontStyle": ""
         }
       }
-    ]
+    ],
+    //  This line makes default dark modern so much nicer to use
+    "[Default Dark Modern]": {
+      "variables": "#CCCCCC",
+    },
   },
   /*          Terminal Options          */
   "terminal.integrated.scrollback": 10000,
